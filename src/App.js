@@ -1,3 +1,4 @@
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import './App.css';
 
 function App() {
@@ -6,8 +7,9 @@ function App() {
       <header className="App-header">
         faris rayhan
       </header>
+        <AmplifySignOut />
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App)
